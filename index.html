@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="decodificacao.js" defer></script>
+</head>
+
+<body>     
+    <form class="principal">
+        <h1>Codificador de mensagens</h1>
+        <h2>Entrada</h2>
+        <input type="text" class="entrada" id="entrada">
+        <div class="escolher-codificador">
+            <input type="radio" id="b64" name="radio" onclick="esconderIntervalo()">
+            <label for="b64">Base64</label>
+            <input type="radio" id="cc" name="radio" onclick="mostrarIntervalo()">
+            <label for="cc">Cifra de Cesar</label>        
+        </div>
+
+        <div>
+            <input type="number" name="intervalo" id="intervalo" class="intervalar" min="1" max="26">
+        </div>
+
+        <div class="botao">
+           <input type="button" class="codificar" value="Codificar" onclick="codificacao()">  
+           <input type="button" class="codificar" value="Decodificador" onclick="decodificacao()">
+        </div>
+        <h2>Saída</h2>
+        <div>
+            <input type="text" name="saida" id="saida" class="saida">
+        </div>
+    </form>
+</body>
+
+</html>
