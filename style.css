@@ -80,6 +80,7 @@ input {
     .principal {
         width: 80%;
         text-align: center;
+        font-size: 0.8em;
     }
 
     .entrada, .saida {
