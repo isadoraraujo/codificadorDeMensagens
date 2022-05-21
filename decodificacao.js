@@ -43,7 +43,7 @@ function codificacao() {
                     }
                 } 
                 else {
-                    devolve += ('Sua resposta não foi compatível com o sistema. Adicione somente letras (minúsculas ou maiúsculas)')
+                    devolve = ('Sua resposta não foi compatível com o sistema. Adicione somente letras (minúsculas ou maiúsculas)')
                 }
             }
             let saida = document.getElementById('saida')
